@@ -1,0 +1,202 @@
+/*المتغيرات*/
+:root{
+  --c1: #1A8169;
+  --c2: #C3F0E1;
+  --c3: #FFFFFF;
+  --c4: #2DFFDC;
+  --bgc: #242529;
+  --bg: #202125;
+  --pad: 8%;
+}
+/*الخصائص المطبقة على الكل*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color: var(--c4);
+  color: var(--c3);
+}
+/*الخطوط*/
+@font-face {
+  font-family: font;
+  src: url("../fonts/graphik.ttf");
+}
+html{
+  font-family: font;
+  font-size: 16px;
+  color: var(--c3);
+  background-color: var(--bg);
+}
+/*الخصائص المشتركة*/
+span{
+  color: var(--c4);
+}
+p{
+  color: var(--c2);
+  font-weight: 1.8rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+h2{
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+h1{
+  font-size: 4.5rem;
+  margin: 0.2rem 0;
+}
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+h4{
+  font-size: 1.25rem;
+  color: var(--c2);
+}
+h5{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+a{
+  text-decoration: none;
+}
+/*id & class*/
+.sec1{
+  width:100%;
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  font-family: font;
+}
+nav{
+  display: flex;
+  padding-top: 2.2rem;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: .75rem 1.5rem;
+}
+nav ul li a{
+  color: var(--c3);
+  text-decoration: none;
+  transition: .7s;
+}
+nav ul li a:hover{
+  color: var(--c4);
+}
+.btn{
+  color: var(--c4);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.25rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid var(--c4);
+  transition: 1s;
+}
+.btn:hover{
+  background-color: var(--c4);
+  border: 2px solid var(--bgc);
+  color: var(--bgc);
+}
+.content{
+  flex-grow: 1;
+  padding: 0 var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.social{
+  margin-top: 1.5rem;
+}
+.social img{
+  margin-right: 1rem;
+  width:2rem;
+  transition: 0.4s;
+}
+.social img:hover{
+  transform: scale(1.2);
+}
+.sec1 .image{
+  width: 45%;
+  height: 90%;
+  position: relative;
+  align-self: flex-end;
+}
+.sec1 .image img{
+  height:100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.sec1 .image:hover .shape{
+  bottom: 30px;
+}
+.sec1 .image:hover .pic{
+  left: 45%;
+}
+.about{
+  background-color: var(--bgc);
+  padding: 2rem var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .image{
+  width: 35%;
+}
+.about .image img{
+  width: 90%;
+}
+.about .text{
+  width: 35%;
+}
+.center{
+  text-align: center;
+}
+.skill{
+  background-color: var(--bg);
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem var(--pad);
+}
+.card{
+  width: 250px;
+  background-color: var(--bgc);
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  border: 1px dashed var(--c2);
+}
+.contact{
+  padding: 2rem var(--pad);
+  background-color: var(--bgc);
+  text-align: center;
+}
+#lang{
+  padding: 0.25rem .5em
+}
+#mode{
+  padding: 0.25rem .5rem
+}
+.mode{
+  width: .9rem;
+}
+@media screen and (max-width:500px){
+  body{
+    display: none;
+  }
+  
+}
