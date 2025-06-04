@@ -21,7 +21,7 @@
 /*الخطوط*/
 @font-face {
   font-family: font;
-  src: url("../fonts/graphik.ttf");
+  src: url("graphik.ttf");
 }
 html{
   font-family: font;
